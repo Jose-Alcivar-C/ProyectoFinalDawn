@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+import { OrganizadorComponentesModule } from './componentes/organizador-componentes.module';
+import { OrganizadorPaginasModule } from './paginas/organizador-paginas.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    OrganizadorComponentesModule,
+    OrganizadorPaginasModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
